@@ -19,3 +19,8 @@ Data is extracted from the UN comtrade database API via an API, documentation fo
 * 'p' stands for partner area. We set this to '0' (World), '643' (Russian Federation) and '804' (Ukraine).
 * 'rg' denotes the type of trade flow (imports=1).
 * 'cc' denotes the commodity type. Below, we use 1001 for 'Wheat and meslin' and 270900 for 'Oils; petroleum oils and oils obtained from bituminous minerals, crude'.
+
+
+## Data Visualisation
+
+The analysis in this repository uses [Plotly Python](https://plotly.com/python/) to create interactive visualisations. We use Plotly's [time series with range selector slider and buttons](https://plotly.com/python/time-series/#time-series-with-range-selector-buttons) as well as Plotly's [choropleth maps](https://plotly.com/python/choropleth-maps/#using-builtin-country-and-state-geometries).
