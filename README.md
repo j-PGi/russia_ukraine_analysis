@@ -3,10 +3,10 @@
 ## Data Sources
 
 ### The FAO Food Price Index
-The Food and Agriculture Organization of the United Nations publishes the FAO Food Price Index (FFPI), which is a monthly measure of international prices of selected food commodities. This includes an overall index, as well as an index for each of the categories 'Meat', 'Dairy', 'Cereals', 'Oils', and 'Sugar'. For more information, see [here](https://www.fao.org/worldfoodsituation/foodpricesindex/en).
+The Food and Agriculture Organization of the United Nations publishes the FAO Food Price Index (FFPI), which is a monthly measure of international prices of selected food commodities. This includes an overall index, as well as an index for each of the categories 'Meat', 'Dairy', 'Cereals', 'Oils', and 'Sugar'. For more information, see [here](https://www.fao.org/worldfoodsituation/foodpricesindex/en). We use a download of the csv file held on their website.
 
 ### Commodities-API
-Theis analysis uses data from the [Commodities-API](https://www.commodities-api.com/). Specifically, it uses the [Commodities-API time-series endpoint](https://www.commodities-api.com/documentation#timeseries). The request for this endpoint requires five parameters: an access key, the start date of the timeframe, the end date of the time frame, 'base' (a three-letter currency code of the preferred base currency), and 'symbols' (the currency or commodity code). The maximum timeframe in a request is 365 days.
+This analysis uses data from the [Commodities-API](https://www.commodities-api.com/). Specifically, it uses the [Commodities-API time-series endpoint](https://www.commodities-api.com/documentation#timeseries). The request for this endpoint requires five parameters: an access key, the start date of the timeframe, the end date of the time frame, 'base' (a three-letter currency code of the preferred base currency), and 'symbols' (the currency or commodity code). The maximum timeframe in a request is 365 days.
 
 ### UN comtrade database API
 Data is extracted from the UN comtrade database API via an API, documentation for which can be found [here](https://comtrade.un.org/data/doc/api/). Details of all the possible options in the API call can be found in the documentation but the specific parameters used in this analysis are as follows:
@@ -22,5 +22,4 @@ Data is extracted from the UN comtrade database API via an API, documentation fo
 
 
 ## Data Visualisation
-
-The analysis in this repository uses [Plotly Python](https://plotly.com/python/) to create interactive visualisations. We use Plotly's [time series with range selector slider and buttons](https://plotly.com/python/time-series/#time-series-with-range-selector-buttons) as well as Plotly's [choropleth maps](https://plotly.com/python/choropleth-maps/#using-builtin-country-and-state-geometries).
+The analysis in this repository uses [Plotly Python](https://plotly.com/python/) to create interactive visualisations. We use Plotly's [time series with range selector slider and buttons](https://plotly.com/python/time-series/#time-series-with-range-selector-buttons), as well as Plotly's [choropleth maps](https://plotly.com/python/choropleth-maps/#using-builtin-country-and-state-geometries).
